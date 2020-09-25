@@ -177,7 +177,7 @@ MASOM v1 is created in part of Kıvanç Tatar's doctoral studies; supervised by 
 
 I would like to also thank Notto J. W. Thelle, Jeff Ens, Ronald Boerson, Jonas Krasch, and Jianyu Fan for their contributions. 
 
-## Note from Notto J. W. Thelle:
+## Note from Notto J. W. Thelle
 
 This version of MASOM has been extended with chroma features. In addition to the 35 features in the original SOM vector, 24 chroma features are included (12 chroma mean + 12 chroma standard deviation). This is meant to strengthen MASOM's performance with audio input from musical instruments, making it more likely that the SOM nodes will cluster audio segments that are harmonically related.
 
