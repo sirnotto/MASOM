@@ -4,6 +4,8 @@ by Kıvanç Tatar
 
 For questions, contact ktatar@sfu.ca.
 
+_This version was forked by Notto J. W. Thelle, scroll to the end of the readme file for more info about this fork._
+
 This is a whole new version of MASOM. Hurray ╰(▔∀▔)╯
 
 In this version, you can separate the samples or audio excerpts that MASOM plays from the recordings that MASOM learns the musical structure. This version is incompatible with the previous versions of MASOM.
@@ -174,5 +176,11 @@ MASOM v2 is supported by Black Bag Media artist group's Canada Council for the A
 MASOM v1 is created in part of Kıvanç Tatar's doctoral studies; supervised by Philippe Pasquier, Steve Dipaola, Oliver Bown, and externally reviewed by Matthew Yee-King; and funded by a doctoral scholarship from Philippe Pasquier's SSHRC Insight and NSERC Discovery grants. [Thesis](http://summit.sfu.ca/item/19665)
 
 I would like to also thank Notto J. W. Thelle, Jeff Ens, Ronald Boerson, Jonas Krasch, and Jianyu Fan for their contributions. 
+
+## Note from Notto J. W. Thelle
+
+This version of MASOM has been extended with chroma features. In addition to the 35 features in the original SOM vector, 24 chroma features are included (12 chroma mean + 12 chroma standard deviation). This is meant to strengthen MASOM's performance with audio input from musical instruments, making it more likely that the SOM nodes will cluster audio segments that are harmonically related.
+
+So far, only the training patches are changed from the original. The run files are unchanged.
 
 
