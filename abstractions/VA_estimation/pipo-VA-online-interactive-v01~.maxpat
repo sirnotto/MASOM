@@ -6469,9 +6469,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
-					"patching_rect" : [ 38.649994, 189.0, 1122.0, 24.0 ],
+					"patching_rect" : [ 38.649994, 189.0, 1167.0, 24.0 ],
 					"style" : "tatarism",
-					"text" : "pipo~ ircamdescriptor @ircamdescriptor.WindowSize 1024 @ircamdescriptor.HopSize 128 @ircamdescriptor.descriptors SpectralFlatness Loudness PerceptualSpectralDecrease PerceptualTristimulus MFCC"
+					"text" : "pipo~ ircamdescriptor @ircamdescriptor.WindowSize 1024 @ircamdescriptor.HopSize 128 @ircamdescriptor.descriptors SpectralFlatness Loudness PerceptualSpectralDecrease PerceptualTristimulus MFCC Chroma"
 				}
 
 			}
