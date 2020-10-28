@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 92.0, 79.0, 1847.0, 920.0 ],
+		"rect" : [ 69.0, 79.0, 1847.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -253,7 +253,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 90.0, 1684.5, 50.0, 19.0 ],
-					"text" : "delay $1"
+					"text" : "delay 0."
 				}
 
 			}
@@ -14707,45 +14707,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "data-concatenated.txt",
-				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_electric/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_electric/data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clusters.txt",
-				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_electric/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_electric/data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SOM-nodes.txt",
-				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_electric/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_electric/data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VMM-training-SOM-seq.txt",
-				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_electric/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_electric/data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "int-FO-poly~.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/GitHub/Run/int-FO",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "stats.txt",
-				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_electric/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_electric/data",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
