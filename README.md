@@ -181,6 +181,4 @@ I would like to also thank Notto J. W. Thelle, Jeff Ens, Ronald Boerson, Jonas K
 
 This version of MASOM has been extended with chroma features. In addition to the 35 features in the original SOM vector, 24 chroma features are included (12 chroma mean + 12 chroma standard deviation). This is meant to strengthen MASOM's performance with audio input from musical instruments, making it more likely that the SOM nodes will cluster audio segments that are harmonically related.
 
-So far, only the training patches are changed from the original. The run files are unchanged.
-
 
