@@ -4,29 +4,20 @@ import os
 import librosa
 from pathlib import Path
 
-#os.chdir(os.getcwd())
-
-
-# tuple with ip, port. i dont use the () but maybe you want -> send_address = ('127.0.0.1', 9000)
+# tuple with ip, port
 receive_address = ('127.0.0.1', 9000)
 send_address = ('127.0.0.1', 9001)
 
-
-# OSC Server. there are three different types of server. 
 s = pyOSC3.OSCServer(receive_address) # basic
-##s = OSC.ThreadingOSCServer(receive_address) # threading
-##s = OSC.ForkingOSCServer(receive_address) # forking
 
 # OSC basic client
 c = pyOSC3.OSCClient() 
 c.connect(send_address)
 
-
 # this registers a 'default' handler (for unmatched messages), 
 # an /'error' handler, an '/info' handler.
 # And, if the client supports it, a '/subscribe' & '/unsubscribe' handler
 s.addDefaultHandlers()
-
 
 # define a message-handler function for the server to call.
 def printing_handler(addr, tags, stuff, source):
@@ -65,8 +56,6 @@ def gothru_masom(addr, tags, stuff, source):
             print(slapback)
             masom_r.append("Golly")
             c.send(masom_r)
-            
-            
         
 s.addMsgHandler("/masom", gothru_masom) # adding masom
 
@@ -75,12 +64,10 @@ print("Registered Callback-functions are :")
 for addr in s.getOSCAddressSpace():
     print(addr)
 
-
 # Start OSCServer
 print("\nStarting OSCServer. Use ctrl-C to quit.")
 st = threading.Thread( target = s.serve_forever )
 st.start()
-
 
 try :
     while 1 :
@@ -92,10 +79,3 @@ except KeyboardInterrupt :
     print("Waiting for Server-thread to finish")
     st.join() ##!!!
     print("Done")
-
-
-
-
-
-    
-
